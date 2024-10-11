@@ -60,3 +60,8 @@ exit()
 ```
 
 
+Hello ! World! 
+
+I love Panncaces! 
+
+When People used to bullie me I just think that they are stupid! :D 
