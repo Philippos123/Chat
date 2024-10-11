@@ -8,6 +8,8 @@ from django.contrib.auth.views import redirect_to_login
 from django.contrib import messages
 from .forms import *
 
+
+
 def profile_view(request, username=None):
     if username:
         profile = get_object_or_404(User, username=username).profile
@@ -91,3 +93,4 @@ def profile_delete_view(request):
         return redirect('home')
     
     return render(request, 'a_users/profile_delete.html')
+

@@ -3,6 +3,8 @@ from django import forms
 from django.contrib.auth.models import User
 from .models import Profile
 
+
+
 class ProfileForm(ModelForm):
     class Meta:
         model = Profile
@@ -20,3 +22,4 @@ class EmailForm(ModelForm):
     class Meta:
         model = User
         fields = ['email']
+        

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'a_home',
     'a_users',
     'a_rtchat',
+    'a_employees',
 ]
 
 SITE_ID = 1
@@ -95,6 +96,15 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels.layers.InMemoryChannelLayer'
     }
 }
+
+#CHANNEL_LAYERS = {
+#    "default": {
+#        "BACKEND": "channels_redis.core.RedisChannelLayer",
+#        "CONFIG": {
+#            "hosts": [('redis://default:PCkPyjkDjkaTPWEqTPELtrCatnHGLNZi@redis.railway.internal:6379')],
+#        },
+#    },
+#}
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
