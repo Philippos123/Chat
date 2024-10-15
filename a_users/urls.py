@@ -1,5 +1,5 @@
 from django.urls import path
-from a_users.views import *
+from a_users.views import profile_view, profile_edit_view, profile_settings_view, profile_emailchange, profile_emailverify, profile_delete_view
 
 
 urlpatterns = [
@@ -10,5 +10,4 @@ urlpatterns = [
     path('emailchange/', profile_emailchange, name="profile-emailchange"),
     path('emailverify/', profile_emailverify, name="profile-emailverify"),
     path('delete/', profile_delete_view, name="profile-delete"),
-
 ]

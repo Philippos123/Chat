@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
-from .models import *
-from .forms import * 
+from .models import ChatGroup, User 
+from .forms import ChatmessageCreateForm, ChatGroup
 
 @login_required
 def chat_view(request, chatroom_name="public-chat"):  # default till "public-chat"
